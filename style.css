@@ -136,15 +136,16 @@ nav li{
 
 .avds-small{
     background-image: url(./images/shakes.jpg);
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    background-size: contain; 
    height: 600px;
    width: 40%;
 
 }
 .avds-large {
    background-image: url(./images/amazing_burgers.jpg);
-    width: 600px;
-    height: 500px;
+    max-width: 600px;
+    max-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -243,4 +244,12 @@ nav li{
     text-decoration: none;
     list-style: none;
     padding: 15px;
+}
+
+
+@media screen and (max-width:700px) {
+    body {width: 80%;}
+    .superstar, .jalpeno, .phillycheese, .handbreaded{
+        flex-basis: 100px;
+        margin: 0px 3px;}
 }
